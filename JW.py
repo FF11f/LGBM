@@ -11,10 +11,10 @@ model = joblib.load('lgbm.pkl')
 # 特征范围定义（根据提供的特征范围和数据类型）
 feature_ranges = {
     "Patient activation level": {"type": "categorical", "options": [0, 1], "default": 0},
-    "BMI": {"type": "categorical", "options": [0, 1], "default": 1}
+    "BMI": {"type": "categorical", "options": [0, 1], "default": 1},
     "Operation Time": {"type": "numerical", "min": 1.0, "max": 1000.0, "default": 240},
-    "Platelet": {"type":"numerical", "min": 0, "max": 1000, "default": 200}
-    "ALB": {"type": "numerical", "min": 0, "max": 1000, "default": 35},
+    "Platelet": {"type":"numerical", "min": 0, "max": 1000, "default": 200},
+    "ALB": {"type": "numerical", "min": 0, "max": 1000, "default": 35}
 }
 
 # Streamlit 界面
